@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+    <head>
+      <style>
+      .button {
+    background-color: #A5CAFF;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: "Verdana";
+}
+div.a {
+    text-align: center;
+}
+	    body {
+    color: darkgrey;
+}
+
+h1 {
+    color: #A5CAFF;
+    font-family: "Verdana";
+    font-size: 50px;
+}
+
+h2 {
+    color: #FFFFFF;
+    font-family: "Verdana";
+    font-size: 35px;
+}
+
+h3 {
+    color: #A5CAFF;
+    font-family: "Verdana";
+    font-size: 25px;
+}
+body {
+    background-color: #FFEBEB;
+}
+    </style>
+      <meta charset="utf-8">
+      <title>About Me</title>
+    </head>
+    <body>
+        <div class="a">
+    <a href="index.html" class="button">Home</a>
+    <a href="portfolio.html" class="button">Portfolio</a>
+    <a href="aboutme.html" class="button">About Me</a>
+    <a href="tipsandtricks.html" class="button">Tips and Tricks</a>
+    <a href="resume.html" class="button">Resume</a>
+  <div class="a">
+  <h1>This is my About Me Page!</h1>
+  <h2> Hi my name is Sophia Mills and I'm 15 years old! I am a sophomore in high school, and I live in Coronado California. </h2>
+    <br>
+    <img src="images/sophia.jpg" alt="Photo of Me" height="200">
+    <h2> In like spending time with my friends in my spare time!</h2>
+    <img src="images/grouppicture.jpeg" alt="Photo of Me and My Friends" height="200">
+    <br>
+    <h3>Say Hi!</h3>
+
+<button onclick="myFunction()">Click this to say hi!</button>
+
+<p id="demo"></p>
+<script>
+function myFunction() {
+    var txt;
+    var person = prompt("Please enter your name:", "your name");
+    if (person == null || person == "") {
+        txt = " ";
+    } else {
+        txt = "Hi " + person + "! How are you?";
+    }
+    document.getElementById("demo").innerHTML = txt;
+}
+</script>
+    </body>
+</html>
